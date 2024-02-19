@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="countries_data.js"></script>
+    <script defer src="main.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+</head>
+
+<body>
+    <div class="page-whole">
+        <div class="header">
+            <h1>PLAYER LEADERBOARD STATUS</h1>
+            <div class="inputs">
+                <input type="text" class="input_Field" id="FirstName" placeholder="Enter Name">
+                <input type="text" class="input_Field" id="LastName" placeholder="Enter Surname">
+                <input type="text" class="input_Field" id="Country" placeholder="Enter Country">
+                <input type="text" class="input_Field" id="Player_Score" placeholder="Enter Score">
+                <button class="addPlayer">Add Player</button>
+            </div>
+            <h1 class="playerMess"></h1>
+        </div>
+        <div class="player-content"></div>
+        <template data-player-card>
+            <div class="player-stats">
+                <div class="player-info">
+                    <div class="nameDate">
+                    <h3 id="pl-name"></h3>
+                    <p id="dateRec"></p>
+                </div>
+                    <h3 id="pl-country"></h3>
+                    <h3 id="pl-score"></h3>
+                </div>
+                <div class="buttons-div">
+                    <button class="BTN" id="bin"></button>
+                    <button class="BTN" id="plus5">+5</button>
+                    <button class="BTN" id="minus5">-5</button>
+                </div>
+            </div>
+
+        </template>
+    </div>
+</body>
+
+</html>
